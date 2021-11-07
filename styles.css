@@ -1,0 +1,98 @@
+body {
+    background-image: url('splash.jpg');
+    color: #444;
+}
+.container {
+    background-color: white;
+}
+.pokemon-card {
+    width: 165px;
+    margin: 10px;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    -webkit-transition:  -webkit-transform 0.2s ease-out;
+    -moz-transition: -moz-transform 0.2s ease-out;
+    -o-transition: -o-transform 0.2s ease-out;
+    -ms-transition: -ms-transform 0.2s ease-out; 
+    transition: transform 0.2s ease-out;
+    position: relative;
+
+    -webkit-backface-visibility: hidden;
+    -moz-backface-visibility: hidden;
+    -o-backface-visibility: hidden;
+    backface-visibility: hidden;
+}
+
+img.energy {
+    opacity: 0.3;
+}
+img.common {
+    opacity: 0.6;
+}
+img.uncommon {
+    opacity: 0.8;
+}
+.section {
+    display: none;
+}
+.main.container {
+    min-height: 900px;
+}
+.top.container {
+    padding-top: 10px;
+}
+.card-wrapper {
+    float: left;
+    text-align: center;
+    padding-bottom: 10px;
+    line-height: 44px;
+}
+.card-wrapper.rare {
+    background-color: #CFD8DC;
+    font-weight: bold;
+}
+.card-wrapper.rare.holo {
+    background-color: #444;
+    color: #ccc;
+}
+.card-wrapper.rare.ultra {
+    background-color: #FFEE58;
+}
+.card-wrapper.rare.secret {
+    background-color: #1A237E;
+    color: #ccc;
+}
+#pokemonModal img { width: 160px; }
+#pokemonModal .deck-item {
+    text-align: center;
+    width: 190px;
+    float: left;
+    margin-bottom: 15px;
+}
+.expansions img {
+    height: 50px;
+    padding: 8px;
+}
+.expansions img.selected { border: 1px solid #990000; }
+.symbol img { height: 38px; }
+li.nav-item { margin: 0 5px; }
+
+.pokemon-card:hover {
+    opacity: 1;
+    z-index: 9999;
+    -webkit-transform:scale(2.25);
+    -moz-transform:scale(2.25);
+    -o-transform:scale(2.25);
+    transform:scale(2.25);
+}
+.pokemon-card.energy:hover {
+    -webkit-transform:scale(1.2);
+    -moz-transform:scale(1.2);
+    -o-transform:scale(1.2);
+    transform:scale(1.2);
+}
+.pokemon-card.rare:hover {
+    -webkit-transform:scale(3);
+    -moz-transform:scale(3);
+    -o-transform:scale(3);
+    transform:scale(3);
+}
